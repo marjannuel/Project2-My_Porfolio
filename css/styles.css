@@ -1,0 +1,152 @@
+:root {
+  --background-color: hwb(0 27% 72%);
+  --background-color-nav: hwb(0 12% 87%);
+  --background-color-pic: hsl(0, 1%, 28%);
+  --fc-white: white;
+  --fs-big: 3.5rem;
+  --fs-medium: 2.5rem;
+  --fs-small: 2rem;
+  --fs-nav-big: 2.5rem;
+  --fs-nav-medium: 1.5rem;
+  --fs-nav-small: 1rem;
+  --fw-thin: 200;
+  --fw-normal: 400;
+  --fw-bold: 600;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--fc-white);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 500px;
+  height: auto;
+  display: block;
+  border-radius: 100px 100px;
+}
+
+nav {
+  padding: 20px;
+  padding-inline: 100px;
+  background-color: var(--background-color-nav);
+  margin-top: 10px;
+  text-decoration: none;
+  font-size: var(--fs-nav-medium);
+  font-weight: var(--fw-thick);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav ul li:first-child {
+  margin-right: auto;
+  color: coral;
+}
+
+#home {
+  display: flex;
+  max-width: 100%;
+  height: 800px;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.intro {
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro h1 {
+  font-size: var(--fs-big);
+  font-weight: var(--fw-bold);
+  margin-bottom: 40px;
+}
+
+.intro h1 span {
+  color: coral;
+}
+
+.intro h2 {
+  font-size: var(--fs-medium);
+  font-weight: var(--fw-thin);
+}
+
+.intro p {
+  font-size: var(--fs-small);
+  font-weight: var(--fw-normal);
+}
+
+.intro h1,
+.intro h2,
+.intro p {
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.intro h1 {
+  animation: typing 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.intro h2 {
+  animation: typing 1.5s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+.intro p {
+  animation: typing 1.5s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.pic-container {
+  padding: 30px;
+  background-color: var(--background-color-pic);
+  border-radius: 100px 100px;
+  box-shadow: 0px 5px 15px #252525;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1.5s ease forwards;
+  animation-delay: 4.5s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
