@@ -102,9 +102,9 @@ nav ul li:first-child > a {
 }
 
 .wave{
-  /* border: #252525 solid 5px; */
-  margin-bottom: -14px;
+  margin-bottom: -10px;
 }
+
 .intro-container svg{
   display: block;
 }
