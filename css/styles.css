@@ -56,19 +56,57 @@ nav ul {
   display: flex;
   gap: 20px;
 }
+
+nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--fc-white);
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+nav ul li a:hover {
+  color: coral;
+}
+
 nav ul li:first-child {
+  margin-right: auto;
+}
+
+nav ul li:first-child > a {
   margin-right: auto;
   color: coral;
 }
 
+.active {
+  border-bottom: 4px solid coral;
+  border-radius: 2px;
+}
+
 #home {
-  display: flex;
   max-width: 100%;
-  height: 800px;
+  height: auto;
+  background-color: var(--background-color);
+  
+}
+
+.intro-container{
+  display: flex;
+  max-height: auto;
+  max-width: 100%;
   justify-content: space-evenly;
   align-items: center;
   gap: 50px;
-  margin-top: 20px;
+  margin-top: 50px;
+  padding-block: 50px;
+}
+
+.wave{
+  /* border: #252525 solid 5px; */
+  margin-bottom: -14px;
+}
+.intro-container svg{
+  display: block;
 }
 
 .intro {
@@ -150,3 +188,6 @@ nav ul li:first-child {
   }
 }
 
+#projects{
+  background-color: coral;
+}

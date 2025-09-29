@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
   
   <title>My Portfolio</title>
 </head>
@@ -13,27 +14,51 @@
   <header>
     <nav>
       <ul>
-        <li><a href=""></a>Marjannuel</li>
-        <li><a href="#home"></a>Home</li>
-        <li><a href=""></a>Projects</li>
-        <li><a href=""></a>Tools</li>
-        <li><a href=""></a>Contact</li>
+        <li><a href="#refresh">Marjannuel</a></li>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="">Tools</a></li>
+        <li><a href="">Contact</a></li>
       </ul>
     </nav>
   </header>
+
   <main>
+
     <section id="home">
-      <div class="intro">
-        <h2>WEB DEVELOPER</h2>
-        <h1>HI, I AM <span>MARJANNUEL</span></h1>
-        <p>Welcome To My Portfolio</p>
+      <div class="intro-container">
+        <div class="intro">
+          <h2>WEB DEVELOPER</h2>
+          <h1>HI, I AM <span>MARJANNUEL</span></h1>
+          <p>Welcome To My Portfolio</p>
+        </div>
+        <div class="intro-pic">
+          <div class="pic-container">
+            <img src="pic/Marjannuel.jpg" alt="My photo">
+          </div>
+        </div>
       </div>
-      <div class="intro-pic">
-        <div class="pic-container">
-          <img src="pic/Marjannuel.jpg" alt="My photo">
+      <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 325"><path fill="coral" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <div class="project-item">
+          <img src="pic/project1.jpg" alt="Project 1">
+          <h3>Project Title 1</h3>
+          <p>Brief description of Project 1.</p>
+        </div>
+        <div class="project-item">
+          <img src="pic/project2.jpg" alt="Project 2">
+          <h3>Project Title 2</h3>
+          <p>Brief description of Project 2.</p>
         </div>
       </div>
     </section>
+
   </main>
   
 </body>
