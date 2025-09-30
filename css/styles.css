@@ -12,6 +12,9 @@
   --fw-thin: 200;
   --fw-normal: 400;
   --fw-bold: 600;
+
+  --fs-sbig: 3rem;
+  --fw-extrabold: 750;
 }
 
 *,
@@ -38,7 +41,13 @@ img {
   max-width: 500px;
   height: auto;
   display: block;
-  border-radius: 100px 100px;
+  border-radius: 9em;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 nav {
@@ -87,7 +96,6 @@ nav ul li:first-child > a {
   max-width: 100%;
   height: auto;
   background-color: var(--background-color);
-  
 }
 
 .intro-container{
@@ -102,14 +110,17 @@ nav ul li:first-child > a {
 }
 
 .wave{
-  margin-bottom: -10px;
+  margin-bottom: -20px;
 }
 
-.intro-container svg{
-  display: block;
+.wave svg{
+  display: inline;
 }
 
 .intro {
+  position: relative;
+  max-width: 100%;
+  height: auto;
   line-height: 1;
   display: flex;
   flex-direction: column;
@@ -144,22 +155,21 @@ nav ul li:first-child > a {
   display: inline-block;
 }
 
-.intro h1 {
-  animation: typing 1.5s;
+.intro h1{
+  animation: typing 1.5s 0s, typing_reverse 1.5s 27s;
   animation-fill-mode: forwards;
 }
 
 .intro h2 {
-  animation: typing 1.5s;
-  animation-delay: 3s;
+  animation: typing 1.5s 3s, typing_reverse 1.5s 28.5s;
   animation-fill-mode: forwards;
 }
 
 .intro p {
-  animation: typing 1.5s;
-  animation-delay: 1.5s;
+  animation: typing 1.5s 1.5s, typing_reverse 1.5s 25.5s;
   animation-fill-mode: forwards;
 }
+
 
 @keyframes typing {
   from {
@@ -170,18 +180,47 @@ nav ul li:first-child > a {
   }
 }
 
+@keyframes typing_reverse {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+.svg-icon{
+  opacity: 0;
+  gap: 20px;
+  display: flex;
+  padding-block: 60px;
+  animation: fadeIn 1.5s 5s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .pic-container {
+  opacity: 0;
   padding: 30px;
   background-color: var(--background-color-pic);
-  border-radius: 100px 100px;
+  border-radius: 9em;
   box-shadow: 0px 5px 15px #252525;
-  opacity: 0;
-  transform: translateY(30px);
   animation: fadeUp 1.5s ease forwards;
   animation-delay: 4.5s;
 }
 
 @keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
   to {
     opacity: 1;
     transform: translateY(0);
@@ -189,5 +228,42 @@ nav ul li:first-child > a {
 }
 
 #projects{
+  max-width: 100%;
+  height: auto;
   background-color: coral;
+}
+
+#projects h2,
+#tools h2 {
+  margin-left: 120px;
+  align-items: center;
+  font-size: var(--fs-medium);
+  font-weight: var(--fw-thin);
+}
+
+#projects h1,
+#tools h1  {
+  font-size: var(--fs-sbig);
+  font-weight: var(--fw-extrabold);
+  text-align: center;
+  background-color: var(--background-color);
+  align-items: center;
+  padding-block: 60px;
+}
+
+.project-list,
+.tools-list {
+  max-width: 100%;
+  max-height: auto;
+  padding-block: 200px;
+}
+
+#tools h1 {
+  background-color: var(--background-color-nav);
+}
+
+#tools{
+  max-width: 100%;
+  height: auto;
+  background-color: var(--background-color);
 }
