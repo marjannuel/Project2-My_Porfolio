@@ -42,4 +42,4 @@ function loopTextAnimation() {
 }
 
 
-setInterval(loopTextAnimation, 16000);
+setInterval(loopTextAnimation, 31000);
