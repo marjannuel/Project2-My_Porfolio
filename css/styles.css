@@ -17,13 +17,13 @@
   --fw-extrabold: 750;
 }
 
-*,
+/* *,
 *::before,
 *::after {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 html {
   scroll-behavior: smooth;
