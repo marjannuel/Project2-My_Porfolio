@@ -38,7 +38,7 @@ body {
 }
 
 img {
-  max-width: 500px;
+  max-width: 31.25rem;
   height: auto;
   display: block;
   border-radius: 9em;
@@ -51,10 +51,12 @@ header {
 }
 
 nav {
-  padding: 20px;
-  padding-inline: 100px;
+  width: 100%;
+  max-width: none;
+  padding: 1.5rem;
+  padding-inline: 6.25rem;
   background-color: var(--background-color-nav);
-  margin-top: 10px;
+  margin-top: 1rem;
   text-decoration: none;
   font-size: var(--fs-nav-medium);
   font-weight: var(--fw-thick);
@@ -63,7 +65,8 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
 nav ul li a {
