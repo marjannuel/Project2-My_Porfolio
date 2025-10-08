@@ -205,6 +205,12 @@ nav ul li:first-child > a {
   animation: fadeIn 1.5s 5s ease forwards;
 }
 
+.bi:hover{
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+  color: coral;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
