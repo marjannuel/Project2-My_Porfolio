@@ -310,6 +310,16 @@ nav ul li:first-child > a {
     font-size: var(--fs-nav-small)
   }
 
+  #projects h2,
+  #tools h2 {
+    font-size: var(--fs-nav-medium);
+  }
+
+  #projects h1,
+  #tools h1  {
+    font-size: var(--fs-nav-big);
+    padding-block: 40px;
+  }
   .svg-icon {
     justify-content: center;
   }
