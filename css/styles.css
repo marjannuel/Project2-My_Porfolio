@@ -12,10 +12,6 @@
   --fs-nav-medium: 1.5rem;
   --fs-nav-small: 1rem;
 
-  --fs-big-mobile: 1.5rem;
-  --fs-medium-mobile: 0.5rem;
-  --fs-small-mobile: 0.1rem;
-
   --fw-thin: 200;
   --fw-normal: 400;
   --fw-bold: 600;
@@ -316,6 +312,17 @@ nav ul li:first-child > a {
     width: 32px;
     height: 32px;
   }
+
+  img {
+    max-width: 25.25rem;
+  }
+
+  .pic-container {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 460px) {
 
   img {
     max-width: 16rem;
