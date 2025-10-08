@@ -3,12 +3,19 @@
   --background-color-nav: hwb(0 12% 87%);
   --background-color-pic: hsl(0, 1%, 28%);
   --fc-white: white;
+
   --fs-big: 3.5rem;
   --fs-medium: 2.5rem;
   --fs-small: 2rem;
+
   --fs-nav-big: 2.5rem;
   --fs-nav-medium: 1.5rem;
   --fs-nav-small: 1rem;
+
+  --fs-big-mobile: 1.5rem;
+  --fs-medium-mobile: 0.5rem;
+  --fs-small-mobile: 0.1rem;
+
   --fw-thin: 200;
   --fw-normal: 400;
   --fw-bold: 600;
@@ -213,10 +220,10 @@ nav ul li:first-child > a {
 
 .pic-container {
   opacity: 0;
-  padding: 30px;
+  padding: 2rem;
   background-color: var(--background-color-pic);
   border-radius: 9em;
-  box-shadow: 0px 5px 15px #252525;
+  box-shadow: 0rem 0.3125rem 1rem #252525;
   animation: fadeUp 1.5s ease forwards;
   animation-delay: 4.5s;
 }
@@ -271,4 +278,50 @@ nav ul li:first-child > a {
   max-width: 100%;
   height: auto;
   background-color: var(--background-color);
+}
+
+@media (max-width: 700px) {
+  nav {
+    display: none;
+  }
+}
+
+@media (max-width: 615px) {
+  .intro {
+    text-align: center;
+  }
+
+  .intro h1{
+    font-size: var(--fs-nav-big)
+  }
+
+  .intro h1 span{
+    display: block;
+  }
+
+  .intro h2 {
+    font-size: var(--fs-nav-medium);
+    margin-bottom: 0.5rem;
+  }
+
+  .intro p {
+    font-size: var(--fs-nav-small)
+  }
+
+  .svg-icon {
+    justify-content: center;
+  }
+
+  .bi {
+    width: 32px;
+    height: 32px;
+  }
+
+  img {
+    max-width: 25.25rem;
+  }
+
+  .pic-container {
+    padding: 1.5rem;
+  }
 }
