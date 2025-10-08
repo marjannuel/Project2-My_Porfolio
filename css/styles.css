@@ -318,16 +318,10 @@ nav ul li:first-child > a {
   }
 
   img {
-    max-width: 25.25rem;
+    max-width: 20rem;
   }
 
   .pic-container {
-    padding: 1.5rem;
-  }
-}
-
-@media (max-width: 100px) {
-  nav {
-    display: none;
+    padding: 1rem;
   }
 }
