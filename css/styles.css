@@ -322,7 +322,7 @@ nav ul li:first-child > a {
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 480px) {
 
   img {
     max-width: 16rem;
