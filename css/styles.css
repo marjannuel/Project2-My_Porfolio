@@ -280,13 +280,19 @@ nav ul li:first-child > a {
   nav {
     display: none;
   }
+
+  #projects h2,
+  #tools h2 {
+    margin-left: 0;
+    text-align: center;
+  }
 }
 
 @media (max-width: 615px) {
   .intro {
     text-align: center;
   }
-
+  
   .intro h1{
     font-size: var(--fs-nav-big)
   }
