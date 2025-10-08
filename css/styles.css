@@ -270,15 +270,10 @@ nav ul li:first-child > a {
   padding-block: 60px;
 }
 
-.project-list,
-.tools-list {
+.project-list {
   max-width: 100%;
   max-height: auto;
-  padding-block: 200px;
-}
-
-#tools h1 {
-  background-color: var(--background-color-nav);
+  padding-block: 12.5rem;
 }
 
 #tools{
@@ -287,6 +282,25 @@ nav ul li:first-child > a {
   background-color: var(--background-color);
 }
 
+.tools-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-block: 12.5rem;
+}
+
+.tools-icon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.tools-icon h3{
+  font-size: var(--fs-nav-small);
+  font-weight: var(--fw-normal);
+}
 @media (max-width: 700px) {
   nav {
     display: none;
