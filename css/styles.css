@@ -325,3 +325,9 @@ nav ul li:first-child > a {
     padding: 1.5rem;
   }
 }
+
+@media (max-width: 100px) {
+  nav {
+    display: none;
+  }
+}
